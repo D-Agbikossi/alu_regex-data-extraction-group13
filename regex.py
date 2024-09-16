@@ -45,6 +45,6 @@ hashtags = re.findall(pattern7, file_content)
 print("Hashtags found:", hashtags)
 
 # Pattern for Currency amounts
-pattern8 = r'\$\d{1,3}(,\d{3})*(\.\d{2})?'
+pattern8 = r'\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?'
 currency = re.findall(pattern8, file_content)
 print("Currency amounts found:", currency)
