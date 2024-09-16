@@ -28,3 +28,13 @@ print("Time Stamps found:", timeStamps)
 pattern6 = r'<\/?[a-zA-Z][a-zA-Z0-9\s"\'=.-]*>'
 html_tags = re.findall(pattern6, file_content)
 print("HTML Tags found:", html_tags)
+
+# Pattern for Hashtags
+pattern3 = r'#\w+'
+hashtags = re.findall(pattern3, file_content)
+print("Hashtags found:", hashtags)
+
+# Pattern for Currency amounts
+pattern4 = r'\$\d{1,3}(,\d{3})*(\.\d{2})?'
+currency = re.findall(pattern4, file_content)
+print("Currency amounts found:", currency)
